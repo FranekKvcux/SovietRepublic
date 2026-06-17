@@ -7,7 +7,7 @@ class Game:
     def __init__(self):
         self.username = ""
 
-        self.happiness = 70     # in procents
+        self.happiness = 70     # in percentage
         self.food = 50          # in quantity
         self.economy = 50       # in quantity
         self.army = 50          # in quantity
@@ -36,6 +36,8 @@ class Game:
         print(f"Now this is your own country where you have to take care of the {self.colorStats('happiness')} of its citizens, {self.colorStats('food')} supplies, {self.colorStats('economy')} and {self.colorStats('army')}.")
         sleep(1)
         print(f"If any statistic drops to zero, you {Fore.RED + 'lose' + Fore.WHITE}.\n")
+
+        input("Click enter to continue")
 
 if __name__ == "__main__":
     game = Game()
